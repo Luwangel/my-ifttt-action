@@ -1,7 +1,7 @@
 {
-    "name": "javascript-action",
-    "version": "1.0.0",
-    "description": "JavaScript Action Template",
+    "name": "my-ifttt-action",
+    "version": "1.0.2",
+    "description": "Luwangel GitHub Action for IFTTT",
     "main": "index.js",
     "scripts": {
         "lint": "eslint index.js",
@@ -9,19 +9,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/actions/javascript-action.git"
+        "url": "git+https://github.com/Luwangel/my-ifttt-action"
     },
     "keywords": [
         "GitHub",
         "Actions",
         "JavaScript"
     ],
-    "author": "GitHub",
+    "author": "Adrien Amoros <adrien.amoros@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/actions/javascript-action/issues"
+        "url": "https://github.com/actions/my-ifttt-action/issues"
     },
-    "homepage": "https://github.com/actions/javascript-action#readme",
+    "homepage": "https://github.com/actions/my-ifttt-action#readme",
     "dependencies": {
         "@actions/core": "~1.1.1",
         "@actions/github": "~1.1.0",
