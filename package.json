@@ -1,6 +1,6 @@
 {
     "name": "my-ifttt-action",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Luwangel GitHub Action for IFTTT",
     "main": "index.js",
     "scripts": {
