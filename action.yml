@@ -1,13 +1,28 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: Luwangel GitHub Action for IFTTT
+author: Adrien Amoros
+description: Triggers an IFTTT webhooks event
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
-    required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps 
-    description: 'The message to output'
+    event:
+        description: The name of the IFTTT webhooks event
+        required: true
+    key:
+        description: Your secret IFTTT webhooks key
+        required: true
+    value1:
+        description: Extra parameter 1 passed to the IFTTT webhook
+        required: false
+        default: ''
+    value2:
+        description: Extra parameter 2 passed to the IFTTT webhook
+        required: false
+        default: ''
+    value3:
+        description: Extra parameter 3 passed to the IFTTT webhook
+        required: false
+        default: ''
 runs:
-  using: 'node12'
+    using: node12
   main: 'index.js'
+branding:
+    icon: zap
+    color: blue
