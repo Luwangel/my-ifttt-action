@@ -9,8 +9,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
-            - name: Luwangel GitHub Action for IFTTT
-              uses: ./
+              with:
+                  ref: releases/v1
+            - uses: ${{GITHUB_WORKSPACE}}
               with:
                   event: ${{secrets.IFTTT_EVENT}}
                   key: ${{secrets.IFTTT_KEY}}
